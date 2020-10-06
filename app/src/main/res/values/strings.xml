@@ -9,4 +9,9 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="text_menu_1">Koleksi</string>
+    <string name="text_menu_2">Status</string>
+    <string name="text_menu_3">Profil</string>
+    <string name="text_search">Cari sesuatu disini ...</string>
+    <string name="text_information">Informasi</string>
 </resources>
