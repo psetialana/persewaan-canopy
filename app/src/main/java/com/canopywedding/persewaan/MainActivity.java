@@ -1,5 +1,6 @@
 package com.canopywedding.persewaan;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -30,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void koleksi(View view) {
+        Intent intent = new Intent(this, KoleksiActivity.class);
+        intent.putExtra("PESAN_MAIN_ACTIVITY", "halo selamat datang");
+        startActivity(intent);
     }
 
     @Override

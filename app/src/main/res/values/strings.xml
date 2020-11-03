@@ -14,4 +14,5 @@
     <string name="text_menu_3">Profil</string>
     <string name="text_search">Cari sesuatu disini ...</string>
     <string name="text_information">Informasi</string>
+    <string name="title_activity_koleksi">KoleksiActivity</string>
 </resources>
