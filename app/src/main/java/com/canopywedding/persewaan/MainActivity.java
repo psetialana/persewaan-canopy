@@ -3,11 +3,13 @@ package com.canopywedding.persewaan;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.canopywedding.AppDatabase;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.room.Room;
 
 import android.view.View;
 
@@ -27,10 +29,13 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+               Intent i = new Intent(getApplicationContext(), TambahData.class);
+               startActivity(i);
             }
         });
+
+        AppDatabase db = Room.databaseBuilder(getApplicationContext(),
+                AppDatabase.class, "canopy").build();
     }
 
     public void koleksi(View view) {
